@@ -40,7 +40,8 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
    8. Start XiAnnotator, this is similar to starting XiSearch. [Short term: You may run into an issue here with a URL having been hardcoded. Not a big deal, we'll cross this bridge when we come to it.]
 
 ##### TODO?
-include XiFDR and instructions for advanced FDR analysis
+include XiFDR and instructions for advanced FDR analysis?
+wrap whole thing up in a Docker container?
 
 
 #### Acknowledgements
@@ -58,10 +59,10 @@ Wellcome Trust, grant numbers 084229, 103139.
 (specific github projects contributed to in brackets, could include our github user names?).
 
 XiSearch Java software -
-Lutz Fischer (XiSearch, XiAnnotator, XiFDR if its included)
+- Lutz Fischer (XiSearch, XiAnnotator, XiFDR if its included)
 
 XiGui -
-Martin Graham (CLMS-UI, searchSubmit, history, userGUI),
-Colin Combe (CLMS-model, CLMS-UI, crosslink-viewer, spectrum),
-Lars Koblowski (spectrum)
-Alexander Rose (NGL, integration of NGL 3D viewer into CLMS-UI)
+- Martin Graham (CLMS-UI, searchSubmit, history, userGUI),
+- Colin Combe (CLMS-model, CLMS-UI, crosslink-viewer, spectrum),
+- Lars Koblowski (spectrum)
+- Alexander Rose (NGL, integration of NGL 3D viewer into CLMS-UI)
