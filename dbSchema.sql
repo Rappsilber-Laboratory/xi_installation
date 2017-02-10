@@ -967,7 +967,6 @@ CREATE TABLE users (
     max_spectra integer,
     max_aas integer,
     email character varying(320),
-    last_search date,
     ptoken_timestamp timestamp with time zone,
     super_user boolean,
     ptoken character varying(36)
@@ -981,13 +980,6 @@ ALTER TABLE users OWNER TO myXi3_user;
 --
 
 COMMENT ON COLUMN users.email IS 'Varchar 320';
-
-
---
--- Name: COLUMN users.last_search; Type: COMMENT; Schema: public; Owner: myXi3_user
---
-
-COMMENT ON COLUMN users.last_search IS 'Store last search date for restricted users';
 
 
 --
