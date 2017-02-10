@@ -12,7 +12,7 @@ Combe, C.W., Fischer, L. & Rappsilber, J., 2015. xiNET: Cross-link Network Maps 
 
 ### Stand-alone mode
 
-Its possible to run XiSearch in 'standalone' mode where you just direct it to the input and it outputs CSV data. Start XiSearch as in step 3 below but without any command line options:
+Its possible to run XiSearch in 'stand-alone' mode where you just direct it to the input and it outputs CSV data. Start XiSearch as in step 3 below but without any command line options:
 ```
 java -cp "XiSearch.jar" rappsilber.applications.Xi
 ```
@@ -23,7 +23,7 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
 
    1. Set up your machine. A linux machine with Apache & php5, Postgres (>9.4), and Oracle's Java 1.8. You could try using another operating system if you want but we recommend against it - in particular [Postgres performance on Windows is much worse than on Linux](http://serverfault.com/questions/222430/is-postgresql-suited-to-one-os-is-it-better-on-linux-than-windows#222479).The memory requirements for the machine running XiSearch may be quite high, and is the limiting factor on the maximum size of the search space. Depending on the resources available to you, you may want to run XiSearch on one machine and the database and web server on another.
 
-   2. Set up your database. Use pg_restore to recreate the database schema from the file dbSchema.sql contained herein. Then populate the crosslinker and enzymes table from crosslinkerAndEnzyme.sql using pg_restore. You need the data in these tables to start searches. (We may need to provide more info on this.) *Note: these SQL dumps assign ownership of things to a role called "myXi3_user", you may want to change this (search and replace on the sql dumps) to something other people don't know for the sake of the **security** of your xi installation.*
+   2. Set up your database. Use pg_restore to recreate the database schema from the file dbSchema.sql contained herein. Then populate the crosslinker and enzymes table from crosslinkerAndEnzyme.sql using pg_restore. You need the data in these tables to start searches. (We may need to provide more info on this.) *Note: these SQL dumps assign ownership of things to a role called "myXi3_user", you may want to change this (search and replace on the sql dumps) to something other people don't know for the sake of the security of your xi installation.
 
    3. Start the java Xi search software.
    ```java -cp "XiSearch.jar:postgresql-9.4.1209.jar" rappsilber.applications.Xi -yo```
@@ -40,7 +40,8 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
    8. Start XiAnnotator, this is similar to starting XiSearch. [Short term: You may run into an issue here with a URL having been hardcoded. Not a big deal, we'll cross this bridge when we come to it.]
 
 ##### TODO?
-include XiFDR and instructions for advanced FDR analysis
+include XiFDR and instructions for advanced FDR analysis?
+wrap whole thing up in a Docker container?
 
 
 #### Acknowledgements
@@ -58,10 +59,10 @@ Wellcome Trust, grant numbers 084229, 103139.
 (specific github projects contributed to in brackets, could include our github user names?).
 
 XiSearch Java software -
-Lutz Fischer (XiSearch, XiAnnotator, XiFDR if its included)
+- Lutz Fischer (XiSearch, XiAnnotator, XiFDR if its included)
 
 XiGui -
-Martin Graham (CLMS-UI, searchSubmit, history, userGUI),
-Colin Combe (CLMS-model, CLMS-UI, crosslink-viewer, spectrum),
-Lars Koblowski (spectrum)
-Alexander Rose (NGL, integration of NGL 3D viewer into CLMS-UI)
+- Martin Graham (CLMS-UI, searchSubmit, history, userGUI),
+- Colin Combe (CLMS-model, CLMS-UI, crosslink-viewer, spectrum),
+- Lars Koblowski (spectrum)
+- Alexander Rose (NGL, integration of NGL 3D viewer into CLMS-UI)
