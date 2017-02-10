@@ -12,7 +12,7 @@ Combe, C.W., Fischer, L. & Rappsilber, J., 2015. xiNET: Cross-link Network Maps 
 
 ### Stand-alone mode
 
-Its possible to run XiSearch in 'standalone' mode where you just direct it to the input and it outputs CSV data. Start XiSearch as in step 3 below but without any command line options:
+Its possible to run XiSearch in 'stand-alone' mode where you just direct it to the input and it outputs CSV data. Start XiSearch as in step 3 below but without any command line options:
 ```
 java -cp "XiSearch.jar" rappsilber.applications.Xi
 ```
