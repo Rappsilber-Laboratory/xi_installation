@@ -65,4 +65,4 @@ XiGui -
 - Martin Graham (CLMS-UI, searchSubmit, history, userGUI),
 - Colin Combe (CLMS-model, CLMS-UI, crosslink-viewer, spectrum),
 - Lars Koblowski (spectrum)
-- Alexander Rose (NGL, integration of NGL 3D viewer into CLMS-UI)
+- Alexander Rose ([NGL](https://github.com/arose/ngl), integration of NGL 3D viewer into CLMS-UI)
