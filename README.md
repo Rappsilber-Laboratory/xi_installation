@@ -29,7 +29,7 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
    ```java -cp "XiSearch.jar:postgresql-9.4.1209.jar" rappsilber.applications.Xi -yo```
     will print out usage instructions. Use the --exampleconfig option to generate an example config file, then edit this and point XiSearch to it when you start it.
 
-   4. Install the web interface - this is mainly a case of 'git cloning' various github projects into your webserver directory. There is a shell script that will clone the git projects, read it and edit the webserver folder before running.
+   4. Install the web interface. The shell script cloneXiGui.sh will clone the git projects; read it and edit the webserver folder before running.
 
    5. Edit the config files for web interface and copy them to the web folder the git projects were cloned into. These files are emailInfo.php, used by user admin functions such as password reset, and connectionString.php which has the connection details for your database.
 
@@ -37,7 +37,7 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
 
    7. You should also be able to view results via the web gui but annotated spectra will not be available until XiAnnotator is started.
 
-   8. Start XiAnnotator, this is similar to starting XiSearch. [Very short term: Theres an issue here. Not a big deal, we're fixing]
+   8. Start XiAnnotator, similar to starting XiSearch, more details to follow...
 
 ##### TODO?
 include XiFDR and instructions for advanced FDR analysis?
