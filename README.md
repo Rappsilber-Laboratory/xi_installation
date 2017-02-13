@@ -37,7 +37,7 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
 
    7. You should also be able to view results via the web gui but annotated spectra will not be available until XiAnnotator is started.
 
-   8. Start XiAnnotator, similar to starting XiSearch, more details to follow...
+   8. Start XiAnnotator, ~~similar to starting XiSearch, more details to follow...~~ It should be started as a service, [see documentation](https://github.com/Rappsilber-Laboratory/xiAnnotator/tree/master/doc).
 
 ##### TODO?
 include XiFDR and instructions for advanced FDR analysis?
