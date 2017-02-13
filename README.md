@@ -33,11 +33,11 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
 
    5. Edit the config files for web interface and copy them to the web folder the git projects were cloned into. These files are emailInfo.php, used by user admin functions such as password reset, and connectionString.php which has the connection details for your database.
 
-   6. Create an initial user by... (assistance to follow from Martin), in the first instance you may need to manually add an entry to the user table. Once this step is completed, you should now be able to login in and start a search.
+   6. Create an initial user by running adameve.php. Syntax is php adameve.php --username="username" --email="admin@yourxi.org" --password="1234" --connectConfig="/pathto/connectionString.php"
 
    7. You should also be able to view results via the web gui but annotated spectra will not be available until XiAnnotator is started.
 
-   8. Start XiAnnotator, this is similar to starting XiSearch. [Short term: You may run into an issue here with a URL having been hardcoded. Not a big deal, we'll cross this bridge when we come to it.]
+   8. Start XiAnnotator, this is similar to starting XiSearch. [Very short term: Theres an issue here. Not a big deal, we're fixing]
 
 ##### TODO?
 include XiFDR and instructions for advanced FDR analysis?
@@ -65,4 +65,4 @@ XiGui -
 - Martin Graham (CLMS-UI, searchSubmit, history, userGUI),
 - Colin Combe (CLMS-model, CLMS-UI, crosslink-viewer, spectrum),
 - Lars Koblowski (spectrum)
-- Alexander Rose (NGL, integration of NGL 3D viewer into CLMS-UI)
+- Alexander Rose ([NGL](https://github.com/arose/ngl), integration of NGL 3D viewer into CLMS-UI)
