@@ -968,7 +968,7 @@ CREATE TABLE users (
     max_aas integer,
     email character varying(320),
     ptoken_timestamp timestamp with time zone,
-    super_user boolean,
+    hidden boolean,
     ptoken character varying(36)
 );
 
