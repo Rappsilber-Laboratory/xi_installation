@@ -48,7 +48,7 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
         |
         \---xi_ini/
                 emailInfo.php
-```  
+```
 8. `set_xi_phpinivalues.sh` is a script that sets necessary values in `php.ini` to allow large file uploads in the Search Submission page. Run this script in the directory that `php.ini` is in (or in a parent directory of it, it will find all instances of `php.ini` beneath the point it is run at).
 
 9. You should also be able to view results via the web gui but annotated spectra will not be available until XiAnnotator is started.
