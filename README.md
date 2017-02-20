@@ -37,7 +37,18 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
   2. An external email account used for sending registration / password reset emails - which also needs a google recaptcha key.
   3. The first Xi user in the database (who will be a superuser.)
 7. Then run `"php php/makeCredentials.php credentials.ini"`. This will make `connectionString.php` (which should then be placed in the same directory as the cloned github projects), `emailInfo.php` (which should then be placed in a sibling folder to the web root called `xi_ini`) and also create the first user in the database.
-
+```
+    |
+    \---your_server/
+        +---www/
+        |   |   connectionString.php
+        |   +---xi3/
+        |   +---searchSubmit/
+        |   \---etc etc
+        |
+        \---xi_ini/
+                emailInfo.php
+```  
 8. `set_xi_phpinivalues.sh` is a script that sets necessary values in `php.ini` to allow large file uploads in the Search Submission page. Run this script in the directory that `php.ini` is in (or in a parent directory of it, it will find all instances of `php.ini` beneath the point it is run at).
 
 9. You should also be able to view results via the web gui but annotated spectra will not be available until XiAnnotator is started.
