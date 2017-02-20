@@ -4,10 +4,17 @@
     //
     // keep it outside web root to stop it getting called externally
     //
-    // call as php adameve.php --username="username" --email="admin@yourxi.org" --password="1234" --connectConfig="/pathto/connectionString.php"
+    // 1. call as php adameve.php --username="username" --email="admin@yourxi.org" --password="1234" --connectConfig="/pathto/connectionString.php"
+    //
+    // 2. or call from inside other php script with $config variable (which is what makeCredentials.php does)
+
     if (defined('STDIN')) {
         
-        $options = getopt("", array("username:", "email:", "password:", "connectConfig:"));
+        if ($argv.count() > 1) {
+            $options = getopt("", array("username:", "email:", "password:", "connectConfig:"));
+        } else {
+            $options = array ("username" => $config["firstUsername"], "email" => $config["firstUserEmail"], "password" => $config["firstUserPassword"], "connectConfig" => "connectionString.php");
+        }
         echo (print_r ($options, true));
         
         if (isset($options["connectConfig"]) && isset($options["email"]) && isset($options["username"]) && isset($options["password"])) {
@@ -17,7 +24,7 @@
             $email = $options["email"];
             
             include ($options["connectConfig"]);
-            
+             echo (print_r ($connectionString, true));
             
             $dbconn = pg_connect($connectionString);
             try {
