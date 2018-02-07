@@ -33,9 +33,9 @@ More detailed documentation for stand-alone mode is ? in the XiSearch project?
     
 5. Install the web interface. The shell script `cloneXiGui.sh` will clone the git projects; read it and edit the webserver folder before running.
 6. Edit `credentials.ini` to have real values. There are 3 accounts to set details for in here:
-  1. The Xi database connection.
-  2. An external email account used for sending registration / password reset emails - which also needs a google recaptcha key.
-  3. The first Xi user in the database (who will be a superuser.)
+	1. The Xi database connection.
+	1. An external email account used for sending registration / password reset emails - which also needs a google recaptcha key.
+	1. The first Xi user in the database (who will be a superuser.)
 7. Then run `"php php/makeCredentials.php credentials.ini"`. This will make `connectionString.php` (which should then be placed in the same directory as the cloned github projects), `emailInfo.php` (which should then be placed in a sibling folder to the web root called `xi_ini`) and also create the first user in the database. See folder diagram further down.
 
 8. `set_xi_phpinivalues.sh` is a script that sets necessary values in `php.ini` to allow large file uploads in the Search Submission page. Run this script in the directory that `php.ini` is in (or in a parent directory of it, it will find all instances of `php.ini` beneath the point it is run at).

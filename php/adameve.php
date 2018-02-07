@@ -18,7 +18,7 @@
         echo (print_r ($options, true));
         
         if (isset($options["connectConfig"]) && isset($options["email"]) && isset($options["username"]) && isset($options["password"])) {
-            echo ("adameve.php: All options present");
+            echo ("adameve.php: All options present\n");
             $pword = $options["password"];
             $username = $options["username"];
             $email = $options["email"];

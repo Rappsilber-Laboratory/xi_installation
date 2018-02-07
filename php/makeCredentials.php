@@ -3,7 +3,7 @@
 
     file_put_contents ("connectionString.php",
         "<?php\r\n\$connectionString = \"host=".$config["dbHost"].
-                       " port=".$config["dbPort"]." dbname=".$config["dbName"]." user=".$config["dbUsername"]." password=''\"".
+                       " port=".$config["dbPort"]." dbname=".$config["dbName"]." user=".$config["dbUsername"]." password=".$config["dbPassword"]."\"".
                        "\r\n?>\r\n"
     );
 
